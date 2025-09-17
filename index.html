@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netflix Clone v2</title>
+  <title>Netflix Clone</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,43 +17,37 @@
       <a href="#">Latest</a>
       <a href="#">My List</a>
     </nav>
+    <button id="themeToggle" class="btn small">🌙 Dark</button>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>Unlimited movies, TV shows, and more.</h1>
-      <p>Watch anywhere. Cancel anytime.</p>
-      <button class="btn">Join Now</button>
+    <div class="hero-overlay">
+      <div class="hero-text">
+        <h1>Unlimited movies, TV shows, and more.</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <button class="btn">Join Now</button>
+      </div>
     </div>
   </section>
 
-  <!-- Movie Sections -->
-  <section class="movies">
-    <h2>Popular on Netflix</h2>
-    <div class="row">
-      <div class="card"><img src="https://picsum.photos/200/300?random=11" alt=""></div>
-      <div class="card"><img src="https://picsum.photos/200/300?random=12" alt=""></div>
-      <div class="card"><img src="https://picsum.photos/200/300?random=13" alt=""></div>
-      <div class="card"><img src="https://picsum.photos/200/300?random=14" alt=""></div>
-    </div>
+  <!-- Movie Sections (JS renders content here) -->
+  <main class="movies">
+    <section>
+      <h2>Popular on Netflix</h2>
+      <div id="popularRow" class="row"></div>
+    </section>
 
-    <h2>Trending Now</h2>
-    <div class="row">
-      <div class="card"><img src="https://picsum.photos/200/300?random=15" alt=""></div>
-      <div class="card"><img src="https://picsum.photos/200/300?random=16" alt=""></div>
-      <div class="card"><img src="https://picsum.photos/200/300?random=17" alt=""></div>
-      <div class="card"><img src="https://picsum.photos/200/300?random=18" alt=""></div>
-    </div>
+    <section>
+      <h2>Trending Now</h2>
+      <div id="trendingRow" class="row"></div>
+    </section>
 
-    <h2>Top Rated</h2>
-    <div class="row">
-      <div class="card"><img src="https://picsum.photos/200/300?random=19" alt=""></div>
-      <div class="card"><img src="https://picsum.photos/200/300?random=20" alt=""></div>
-      <div class="card"><img src="https://picsum.photos/200/300?random=21" alt=""></div>
-      <div class="card"><img src="https://picsum.photos/200/300?random=22" alt=""></div>
-    </div>
-  </section>
+    <section>
+      <h2>Top Rated</h2>
+      <div id="topRatedRow" class="row"></div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
@@ -63,7 +57,9 @@
       <a href="#">Terms of Use</a>
       <a href="#">Privacy</a>
     </div>
-    <p>Netflix Clone v2 for Git & GitHub Practice © 2025</p>
+    <p>Netflix Clone © 2025</p>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
