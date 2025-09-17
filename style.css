@@ -1,0 +1,114 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #000;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e50914;
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  color: #e50914;
+}
+
+/* Hero Section */
+.hero {
+  height: 70vh;
+  background: url("https://picsum.photos/1200/600?random=99") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #e50914;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #b20710;
+}
+
+/* Movie Rows */
+.movies {
+  padding: 20px;
+}
+
+.movies h2 {
+  margin: 20px 0;
+}
+
+.row {
+  display: flex;
+  overflow-x: auto;
+}
+
+.row img {
+  width: 200px;
+  margin-right: 10px;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.row img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  font-size: 14px;
+  color: #999;
+}
